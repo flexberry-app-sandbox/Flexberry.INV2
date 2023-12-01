@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISINV2Должност",
+  "modelName": "i-i-s-i-n-v2-должност",
+  "className": "Должност",
+  "nameSpace": "IIS.INV2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "должность",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "код",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДолжностE",
+      "modelName": "i-i-s-i-n-v2-должност",
+      "attrs": [
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ДолжностL",
+      "modelName": "i-i-s-i-n-v2-должност",
+      "attrs": [
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "код",
+          "caption": "Код",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

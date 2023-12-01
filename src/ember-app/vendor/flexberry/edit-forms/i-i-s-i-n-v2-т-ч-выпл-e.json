@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Т ч_выпл",
+  "name": "IISINV2ТЧ_выплE",
+  "className": "ТЧ_выплE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-т-ч-выпл",
+      "modelProjection": "ТЧ_выплE"
+    }
+  ]
+}

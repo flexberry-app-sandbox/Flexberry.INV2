@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISINV2ТипАкц",
+  "modelName": "i-i-s-i-n-v2-тип-акц",
+  "className": "ТипАкц",
+  "nameSpace": "IIS.INV2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "типАкции",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТипАкцE",
+      "modelName": "i-i-s-i-n-v2-тип-акц",
+      "attrs": [
+        {
+          "name": "типАкции",
+          "caption": "Тип акции",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТипАкцL",
+      "modelName": "i-i-s-i-n-v2-тип-акц",
+      "attrs": [
+        {
+          "name": "типАкции",
+          "caption": "Тип акции",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

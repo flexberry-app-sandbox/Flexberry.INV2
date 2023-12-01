@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-n-v2-должност-e",
+  "editForm": "i-i-s-i-n-v2-должност-e",
+  "external": false,
+  "caption": "Должност",
+  "name": "IISINV2ДолжностL",
+  "className": "ДолжностL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-должност",
+      "modelProjection": "ДолжностL"
+    }
+  ]
+}

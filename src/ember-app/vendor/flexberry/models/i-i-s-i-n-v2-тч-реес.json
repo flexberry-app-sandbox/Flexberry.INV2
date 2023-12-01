@@ -1,0 +1,169 @@
+﻿{
+  "name": "IISINV2Тч_реес",
+  "modelName": "i-i-s-i-n-v2-тч-реес",
+  "className": "Тч_реес",
+  "nameSpace": "IIS.INV2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "доляУК",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номинал",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "основание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "типАкц",
+      "relatedTo": "i-i-s-i-n-v2-тип-акц",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "Тч_реесE",
+      "modelName": "i-i-s-i-n-v2-тч-реес",
+      "attrs": [
+        {
+          "name": "номинал",
+          "caption": "Номинал",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "доляУК",
+          "caption": "Доля УК",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "основание",
+          "caption": "Основание",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ТипАкции",
+          "lookupValueField": "типАкции",
+          "relationName": "ТипАкц",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "типАкции",
+              "caption": "Тип акции",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Тип акц",
+          "name": "типАкц",
+          "relatedTo": "i-i-s-i-n-v2-тип-акц",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "Тч_реесL",
+      "modelName": "i-i-s-i-n-v2-тч-реес",
+      "attrs": [
+        {
+          "name": "номинал",
+          "caption": "Номинал",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "доляУК",
+          "caption": "Доля УК",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "основание",
+          "caption": "Основание",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТипАкц",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "типАкции",
+              "caption": "Тип акции",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Тип акции",
+          "name": "типАкц",
+          "relatedTo": "i-i-s-i-n-v2-тип-акц",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

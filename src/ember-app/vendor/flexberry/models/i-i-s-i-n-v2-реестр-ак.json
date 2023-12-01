@@ -1,0 +1,218 @@
+﻿{
+  "name": "IISINV2РеестрАк",
+  "modelName": "i-i-s-i-n-v2-реестр-ак",
+  "className": "РеестрАк",
+  "nameSpace": "IIS.INV2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "подпись",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиен",
+      "relatedTo": "i-i-s-i-n-v2-клиен",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудн",
+      "relatedTo": "i-i-s-i-n-v2-сотрудн",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "упрОБъек",
+      "relatedTo": "i-i-s-i-n-v2-упр-о-бъек",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РеестрАкE",
+      "modelName": "i-i-s-i-n-v2-реестр-ак",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "подпись",
+          "caption": "Подпись",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наим",
+          "lookupValueField": "наим",
+          "relationName": "Клиен",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наим",
+              "caption": "Наим",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Клиен",
+          "name": "клиен",
+          "relatedTo": "i-i-s-i-n-v2-клиен",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Сотрудн",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Сотрудн",
+          "name": "сотрудн",
+          "relatedTo": "i-i-s-i-n-v2-сотрудн",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "УпрОБъек",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 7,
+          "type": "standard",
+          "caption": "Упр о бъек",
+          "name": "упрОБъек",
+          "relatedTo": "i-i-s-i-n-v2-упр-о-бъек",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "РеестрАкL",
+      "modelName": "i-i-s-i-n-v2-реестр-ак",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "подпись",
+          "caption": "Подпись",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиен",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наим",
+              "caption": "Наим",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наим",
+          "name": "клиен",
+          "relatedTo": "i-i-s-i-n-v2-клиен",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудн",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "сотрудн",
+          "relatedTo": "i-i-s-i-n-v2-сотрудн",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

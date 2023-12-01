@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-n-v2-договр-инв-e",
+  "editForm": "i-i-s-i-n-v2-договр-инв-e",
+  "external": false,
+  "caption": "Договр инв",
+  "name": "IISINV2ДоговрИнвL",
+  "className": "ДоговрИнвL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-договр-инв",
+      "modelProjection": "ДоговрИнвL"
+    }
+  ]
+}

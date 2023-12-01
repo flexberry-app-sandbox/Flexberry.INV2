@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Должност",
+      "projection": "ДолжностL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Сотрудн",
+  "name": "IISINV2СотруднE",
+  "className": "СотруднE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-сотрудн",
+      "modelProjection": "СотруднE"
+    }
+  ]
+}

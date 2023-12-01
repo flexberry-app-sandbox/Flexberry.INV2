@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Упр о бъек",
+  "name": "IISINV2УпрОБъекE",
+  "className": "УпрОБъекE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-упр-о-бъек",
+      "modelProjection": "УпрОБъекE"
+    }
+  ]
+}

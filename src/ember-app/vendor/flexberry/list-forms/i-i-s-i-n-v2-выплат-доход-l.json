@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-n-v2-выплат-доход-e",
+  "editForm": "i-i-s-i-n-v2-выплат-доход-e",
+  "external": false,
+  "caption": "Выплат доход",
+  "name": "IISINV2ВыплатДоходL",
+  "className": "ВыплатДоходL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-выплат-доход",
+      "modelProjection": "ВыплатДоходL"
+    }
+  ]
+}

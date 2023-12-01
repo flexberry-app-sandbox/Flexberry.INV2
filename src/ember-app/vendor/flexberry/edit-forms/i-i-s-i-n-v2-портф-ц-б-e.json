@@ -1,0 +1,47 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудн",
+      "projection": "СотруднL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "УпрОБъек",
+      "projection": "УпрОБъекL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиен",
+      "projection": "КлиенL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Портф ЦБ",
+  "name": "IISINV2ПортфЦБE",
+  "className": "ПортфЦБE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-портф-ц-б",
+      "modelProjection": "ПортфЦБE"
+    }
+  ]
+}

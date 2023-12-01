@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISINV2ТЧ_выпл",
+  "modelName": "i-i-s-i-n-v2-т-ч-выпл",
+  "className": "ТЧ_выпл",
+  "nameSpace": "IIS.INV2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧ_выплE",
+      "modelName": "i-i-s-i-n-v2-т-ч-выпл",
+      "attrs": [
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТЧ_выплL",
+      "modelName": "i-i-s-i-n-v2-т-ч-выпл",
+      "attrs": [
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

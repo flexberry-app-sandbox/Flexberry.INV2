@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-n-v2-упр-о-бъек-e",
+  "editForm": "i-i-s-i-n-v2-упр-о-бъек-e",
+  "external": false,
+  "caption": "Упр о бъек",
+  "name": "IISINV2УпрОБъекL",
+  "className": "УпрОБъекL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-упр-о-бъек",
+      "modelProjection": "УпрОБъекL"
+    }
+  ]
+}

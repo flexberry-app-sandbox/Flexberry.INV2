@@ -1,0 +1,301 @@
+﻿
+
+
+
+
+CREATE TABLE ПортфЦБ (
+ primaryKey UUID NOT NULL,
+ Номер INT NULL,
+ Дата TIMESTAMP(3) NULL,
+ Обязаности VARCHAR(255) NULL,
+ Сумма REAL NULL,
+ ПодписьК BOOLEAN NULL,
+ ПодписьО BOOLEAN NULL,
+ Сотрудн UUID NOT NULL,
+ Организация UUID NOT NULL,
+ УпрОБъек UUID NOT NULL,
+ Клиен UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Организация (
+ primaryKey UUID NOT NULL,
+ Наим VARCHAR(255) NULL,
+ РасСчет INT NULL,
+ БИК INT NULL,
+ Банк VARCHAR(255) NULL,
+ ИНН INT NULL,
+ КПП INT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Тч_Портф (
+ primaryKey UUID NOT NULL,
+ Номинал REAL NULL,
+ Колич INT NULL,
+ Сумма REAL NULL,
+ ТипАкц UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Сотрудн (
+ primaryKey UUID NOT NULL,
+ ФИО VARCHAR(255) NULL,
+ Должност UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE РеестрАк (
+ primaryKey UUID NOT NULL,
+ Дата TIMESTAMP(3) NULL,
+ Номер INT NULL,
+ Подпись BOOLEAN NULL,
+ Клиен UUID NOT NULL,
+ Сотрудн UUID NOT NULL,
+ УпрОБъек UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ТЧ_выпл (
+ primaryKey UUID NOT NULL,
+ Сумма REAL NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Клиен (
+ primaryKey UUID NOT NULL,
+ Наим VARCHAR(255) NULL,
+ РасСчет INT NULL,
+ БИК INT NULL,
+ Банк VARCHAR(255) NULL,
+ ИНН INT NULL,
+ КПП INT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Тч_реес (
+ primaryKey UUID NOT NULL,
+ Номинал REAL NULL,
+ Сумма REAL NULL,
+ ДоляУК REAL NULL,
+ Основание VARCHAR(255) NULL,
+ ТипАкц UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ВыплатДоход (
+ primaryKey UUID NOT NULL,
+ Дата TIMESTAMP(3) NULL,
+ Требования VARCHAR(255) NULL,
+ Номер INT NULL,
+ УпрОБъек UUID NOT NULL,
+ Сотрудн UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Должност (
+ primaryKey UUID NOT NULL,
+ Должность VARCHAR(255) NULL,
+ Код INT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE УпрОБъек (
+ primaryKey UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ИнвВзн (
+ primaryKey UUID NOT NULL,
+ Дата TIMESTAMP(3) NULL,
+ Сумма REAL NULL,
+ Подпись BOOLEAN NULL,
+ Номер INT NULL,
+ УпрОБъек UUID NOT NULL,
+ ДоговрИнв UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ТипАкц (
+ primaryKey UUID NOT NULL,
+ ТипАкции VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ДоговрИнв (
+ primaryKey UUID NOT NULL,
+ Требования VARCHAR(255) NULL,
+ Дата TIMESTAMP(3) NULL,
+ Номер INT NULL,
+ ПредмДог VARCHAR(255) NULL,
+ Обяз VARCHAR(255) NULL,
+ ПодписьК BOOLEAN NULL,
+ ПодписьО BOOLEAN NULL,
+ Сумма REAL NULL,
+ УпрОБъек UUID NOT NULL,
+ Организация UUID NOT NULL,
+ Клиен UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMNETLOCKDATA (
+ LockKey VARCHAR(300) NOT NULL,
+ UserName VARCHAR(300) NOT NULL,
+ LockDate TIMESTAMP(3) NULL,
+ PRIMARY KEY (LockKey));
+
+
+CREATE TABLE STORMSETTINGS (
+ primaryKey UUID NOT NULL,
+ Module VARCHAR(1000) NULL,
+ Name VARCHAR(255) NULL,
+ Value TEXT NULL,
+ "User" VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMAdvLimit (
+ primaryKey UUID NOT NULL,
+ "User" VARCHAR(255) NULL,
+ Published BOOLEAN NULL,
+ Module VARCHAR(255) NULL,
+ Name VARCHAR(255) NULL,
+ Value TEXT NULL,
+ HotKeyData INT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMFILTERSETTING (
+ primaryKey UUID NOT NULL,
+ Name VARCHAR(255) NOT NULL,
+ DataObjectView VARCHAR(255) NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMWEBSEARCH (
+ primaryKey UUID NOT NULL,
+ Name VARCHAR(255) NOT NULL,
+ "Order" INT NOT NULL,
+ PresentView VARCHAR(255) NOT NULL,
+ DetailedView VARCHAR(255) NOT NULL,
+ FilterSetting_m0 UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMFILTERDETAIL (
+ primaryKey UUID NOT NULL,
+ Caption VARCHAR(255) NOT NULL,
+ DataObjectView VARCHAR(255) NOT NULL,
+ ConnectMasterProp VARCHAR(255) NOT NULL,
+ OwnerConnectProp VARCHAR(255) NULL,
+ FilterSetting_m0 UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMFILTERLOOKUP (
+ primaryKey UUID NOT NULL,
+ DataObjectType VARCHAR(255) NOT NULL,
+ Container VARCHAR(255) NULL,
+ ContainerTag VARCHAR(255) NULL,
+ FieldsToView VARCHAR(255) NULL,
+ FilterSetting_m0 UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE UserSetting (
+ primaryKey UUID NOT NULL,
+ AppName VARCHAR(256) NULL,
+ UserName VARCHAR(512) NULL,
+ UserGuid UUID NULL,
+ ModuleName VARCHAR(1024) NULL,
+ ModuleGuid UUID NULL,
+ SettName VARCHAR(256) NULL,
+ SettGuid UUID NULL,
+ SettLastAccessTime TIMESTAMP(3) NULL,
+ StrVal VARCHAR(256) NULL,
+ TxtVal TEXT NULL,
+ IntVal INT NULL,
+ BoolVal BOOLEAN NULL,
+ GuidVal UUID NULL,
+ DecimalVal DECIMAL(20,10) NULL,
+ DateTimeVal TIMESTAMP(3) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ApplicationLog (
+ primaryKey UUID NOT NULL,
+ Category VARCHAR(64) NULL,
+ EventId INT NULL,
+ Priority INT NULL,
+ Severity VARCHAR(32) NULL,
+ Title VARCHAR(256) NULL,
+ Timestamp TIMESTAMP(3) NULL,
+ MachineName VARCHAR(32) NULL,
+ AppDomainName VARCHAR(512) NULL,
+ ProcessId VARCHAR(256) NULL,
+ ProcessName VARCHAR(512) NULL,
+ ThreadName VARCHAR(512) NULL,
+ Win32ThreadId VARCHAR(128) NULL,
+ Message VARCHAR(2500) NULL,
+ FormattedMessage TEXT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+
+ ALTER TABLE ПортфЦБ ADD CONSTRAINT FKef074de58d806d324e700712c081f9a9584f187b FOREIGN KEY (Сотрудн) REFERENCES Сотрудн; 
+CREATE INDEX Indexef074de58d806d324e700712c081f9a9584f187b on ПортфЦБ (Сотрудн); 
+
+ ALTER TABLE ПортфЦБ ADD CONSTRAINT FK61341b0021efa11b689ffcfc69041b9fc49cdf98 FOREIGN KEY (Организация) REFERENCES Организация; 
+CREATE INDEX Index61341b0021efa11b689ffcfc69041b9fc49cdf98 on ПортфЦБ (Организация); 
+
+ ALTER TABLE ПортфЦБ ADD CONSTRAINT FK63a62bb80ae8a3e23b7cd631dcbe06ba469f12a8 FOREIGN KEY (УпрОБъек) REFERENCES УпрОБъек; 
+CREATE INDEX Index63a62bb80ae8a3e23b7cd631dcbe06ba469f12a8 on ПортфЦБ (УпрОБъек); 
+
+ ALTER TABLE ПортфЦБ ADD CONSTRAINT FK894049f90747f82a3058494370475e82660ae5db FOREIGN KEY (Клиен) REFERENCES Клиен; 
+CREATE INDEX Index894049f90747f82a3058494370475e82660ae5db on ПортфЦБ (Клиен); 
+
+ ALTER TABLE Тч_Портф ADD CONSTRAINT FKf0d6496faa8ba59c9d4cc6b0918e2744ac129fd3 FOREIGN KEY (ТипАкц) REFERENCES ТипАкц; 
+CREATE INDEX Indexf0d6496faa8ba59c9d4cc6b0918e2744ac129fd3 on Тч_Портф (ТипАкц); 
+
+ ALTER TABLE Сотрудн ADD CONSTRAINT FK2ffd106ba366d4cf340cdccdd85218de15f6424c FOREIGN KEY (Должност) REFERENCES Должност; 
+CREATE INDEX Index2ffd106ba366d4cf340cdccdd85218de15f6424c on Сотрудн (Должност); 
+
+ ALTER TABLE РеестрАк ADD CONSTRAINT FK857e3bce60dee92385c3197f9e4ae767733c0a4c FOREIGN KEY (Клиен) REFERENCES Клиен; 
+CREATE INDEX Index857e3bce60dee92385c3197f9e4ae767733c0a4c on РеестрАк (Клиен); 
+
+ ALTER TABLE РеестрАк ADD CONSTRAINT FK0101037a232a0f3ca50af9ea0e36d4452356f7ae FOREIGN KEY (Сотрудн) REFERENCES Сотрудн; 
+CREATE INDEX Index0101037a232a0f3ca50af9ea0e36d4452356f7ae on РеестрАк (Сотрудн); 
+
+ ALTER TABLE РеестрАк ADD CONSTRAINT FK6dbf098ab2637ad63bbbbc0ffd5243d88d9272a4 FOREIGN KEY (УпрОБъек) REFERENCES УпрОБъек; 
+CREATE INDEX Index6dbf098ab2637ad63bbbbc0ffd5243d88d9272a4 on РеестрАк (УпрОБъек); 
+
+ ALTER TABLE Тч_реес ADD CONSTRAINT FK3ee6bca2639ce60332eb78569d0c41dabfee9f1c FOREIGN KEY (ТипАкц) REFERENCES ТипАкц; 
+CREATE INDEX Index3ee6bca2639ce60332eb78569d0c41dabfee9f1c on Тч_реес (ТипАкц); 
+
+ ALTER TABLE ВыплатДоход ADD CONSTRAINT FK43c2bf0242c6e289bb834b8c3830c3ee375c4443 FOREIGN KEY (УпрОБъек) REFERENCES УпрОБъек; 
+CREATE INDEX Index43c2bf0242c6e289bb834b8c3830c3ee375c4443 on ВыплатДоход (УпрОБъек); 
+
+ ALTER TABLE ВыплатДоход ADD CONSTRAINT FK4d9cfeb260b06a55ff22c4590f2b5c286e127db0 FOREIGN KEY (Сотрудн) REFERENCES Сотрудн; 
+CREATE INDEX Index4d9cfeb260b06a55ff22c4590f2b5c286e127db0 on ВыплатДоход (Сотрудн); 
+
+ ALTER TABLE ИнвВзн ADD CONSTRAINT FK658d60c17c6c3e415e93f7fed0c156b829b18ee6 FOREIGN KEY (УпрОБъек) REFERENCES УпрОБъек; 
+CREATE INDEX Index658d60c17c6c3e415e93f7fed0c156b829b18ee6 on ИнвВзн (УпрОБъек); 
+
+ ALTER TABLE ИнвВзн ADD CONSTRAINT FKeeb0a095554a5ab6a38ec68f1414b564994af0c8 FOREIGN KEY (ДоговрИнв) REFERENCES ДоговрИнв; 
+CREATE INDEX Indexeeb0a095554a5ab6a38ec68f1414b564994af0c8 on ИнвВзн (ДоговрИнв); 
+
+ ALTER TABLE ДоговрИнв ADD CONSTRAINT FK65d1a85a354f3a13b0eafd4e65f833ee718837e7 FOREIGN KEY (УпрОБъек) REFERENCES УпрОБъек; 
+CREATE INDEX Index65d1a85a354f3a13b0eafd4e65f833ee718837e7 on ДоговрИнв (УпрОБъек); 
+
+ ALTER TABLE ДоговрИнв ADD CONSTRAINT FKef84cf72b07bec061c53a47ab01542bc2955d339 FOREIGN KEY (Организация) REFERENCES Организация; 
+CREATE INDEX Indexef84cf72b07bec061c53a47ab01542bc2955d339 on ДоговрИнв (Организация); 
+
+ ALTER TABLE ДоговрИнв ADD CONSTRAINT FKb158f50312586a68eacc14fed9430cecc42e0e8d FOREIGN KEY (Клиен) REFERENCES Клиен; 
+CREATE INDEX Indexb158f50312586a68eacc14fed9430cecc42e0e8d on ДоговрИнв (Клиен); 
+
+ ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
+
+ ALTER TABLE STORMFILTERDETAIL ADD CONSTRAINT FK921d16269835017e2a0d0e29ad6fb175454a70d0 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
+
+ ALTER TABLE STORMFILTERLOOKUP ADD CONSTRAINT FKce38ef0db3f01a53acaa49fed8853fb941ad47ba FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
+

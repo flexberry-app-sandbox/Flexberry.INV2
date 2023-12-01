@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Должност",
+  "name": "IISINV2ДолжностE",
+  "className": "ДолжностE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-должност",
+      "modelProjection": "ДолжностE"
+    }
+  ]
+}

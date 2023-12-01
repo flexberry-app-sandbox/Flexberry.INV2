@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-n-v2-инв-взн-e",
+  "editForm": "i-i-s-i-n-v2-инв-взн-e",
+  "external": false,
+  "caption": "Инв взн",
+  "name": "IISINV2ИнвВзнL",
+  "className": "ИнвВзнL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-инв-взн",
+      "modelProjection": "ИнвВзнL"
+    }
+  ]
+}

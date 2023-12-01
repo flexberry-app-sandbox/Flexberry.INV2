@@ -1,0 +1,1 @@
+docker-compose -p inv2-java up -d

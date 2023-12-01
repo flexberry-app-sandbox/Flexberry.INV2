@@ -1,0 +1,113 @@
+﻿{
+  "applicationCaption": "I n v2",
+  "applicationTitle": "I n v2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "i-n-v2",
+      "caption": "INV2",
+      "title": "INV2",
+      "children": [
+        {
+          "link": "i-i-s-i-n-v2-портф-ц-б-l",
+          "menuName": null,
+          "caption": "Портф ЦБ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-тч-портф-l",
+          "menuName": null,
+          "caption": "Тч_ портф",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-сотрудн-l",
+          "menuName": null,
+          "caption": "Сотрудн",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-реестр-ак-l",
+          "menuName": null,
+          "caption": "Реестр ак",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-т-ч-выпл-l",
+          "menuName": null,
+          "caption": "Т ч_выпл",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-клиен-l",
+          "menuName": null,
+          "caption": "Клиен",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-тч-реес-l",
+          "menuName": null,
+          "caption": "Тч_реес",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-выплат-доход-l",
+          "menuName": null,
+          "caption": "Выплат доход",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-должност-l",
+          "menuName": null,
+          "caption": "Должност",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-упр-о-бъек-l",
+          "menuName": null,
+          "caption": "Упр о бъек",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-инв-взн-l",
+          "menuName": null,
+          "caption": "Инв взн",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-тип-акц-l",
+          "menuName": null,
+          "caption": "Тип акц",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-i-n-v2-договр-инв-l",
+          "menuName": null,
+          "caption": "Договр инв",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

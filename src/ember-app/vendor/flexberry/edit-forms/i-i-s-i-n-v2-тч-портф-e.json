@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТипАкц",
+      "projection": "ТипАкцL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Тч_ портф",
+  "name": "IISINV2Тч_ПортфE",
+  "className": "Тч_ПортфE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-тч-портф",
+      "modelProjection": "Тч_ПортфE"
+    }
+  ]
+}

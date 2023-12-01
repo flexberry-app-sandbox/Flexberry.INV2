@@ -1,0 +1,30 @@
+﻿{
+  "name": "IISINV2УпрОБъек",
+  "modelName": "i-i-s-i-n-v2-упр-о-бъек",
+  "className": "УпрОБъек",
+  "nameSpace": "IIS.INV2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УпрОБъекE",
+      "modelName": "i-i-s-i-n-v2-упр-о-бъек",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "УпрОБъекL",
+      "modelName": "i-i-s-i-n-v2-упр-о-бъек",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

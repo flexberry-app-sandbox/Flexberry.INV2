@@ -1,0 +1,6 @@
+import EditFormRoute from 'ember-flexberry/routes/edit-form';
+
+export default EditFormRoute.extend({
+  modelProjection: 'ТЧ_выплE',
+  modelName: 'i-i-s-i-n-v2-т-ч-выпл'
+});

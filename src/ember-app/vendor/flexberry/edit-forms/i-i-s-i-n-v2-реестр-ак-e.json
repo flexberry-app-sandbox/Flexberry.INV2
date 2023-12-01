@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиен",
+      "projection": "КлиенL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудн",
+      "projection": "СотруднL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "УпрОБъек",
+      "projection": "УпрОБъекL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Реестр ак",
+  "name": "IISINV2РеестрАкE",
+  "className": "РеестрАкE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-реестр-ак",
+      "modelProjection": "РеестрАкE"
+    }
+  ]
+}

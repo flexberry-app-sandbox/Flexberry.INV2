@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТипАкц",
+      "projection": "ТипАкцL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Тч_реес",
+  "name": "IISINV2Тч_реесE",
+  "className": "Тч_реесE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-тч-реес",
+      "modelProjection": "Тч_реесE"
+    }
+  ]
+}

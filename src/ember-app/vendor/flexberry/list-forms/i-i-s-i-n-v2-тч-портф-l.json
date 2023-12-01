@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-n-v2-тч-портф-e",
+  "editForm": "i-i-s-i-n-v2-тч-портф-e",
+  "external": false,
+  "caption": "Тч_ портф",
+  "name": "IISINV2Тч_ПортфL",
+  "className": "Тч_ПортфL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-тч-портф",
+      "modelProjection": "Тч_ПортфL"
+    }
+  ]
+}

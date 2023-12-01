@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-n-v2-тип-акц-e",
+  "editForm": "i-i-s-i-n-v2-тип-акц-e",
+  "external": false,
+  "caption": "Тип акц",
+  "name": "IISINV2ТипАкцL",
+  "className": "ТипАкцL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-тип-акц",
+      "modelProjection": "ТипАкцL"
+    }
+  ]
+}

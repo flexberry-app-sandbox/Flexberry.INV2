@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-n-v2-реестр-ак-e",
+  "editForm": "i-i-s-i-n-v2-реестр-ак-e",
+  "external": false,
+  "caption": "Реестр ак",
+  "name": "IISINV2РеестрАкL",
+  "className": "РеестрАкL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-реестр-ак",
+      "modelProjection": "РеестрАкL"
+    }
+  ]
+}

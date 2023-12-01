@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Клиен",
+  "name": "IISINV2КлиенE",
+  "className": "КлиенE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-клиен",
+      "modelProjection": "КлиенE"
+    }
+  ]
+}

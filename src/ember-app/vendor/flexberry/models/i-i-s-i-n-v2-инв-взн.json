@@ -1,0 +1,190 @@
+﻿{
+  "name": "IISINV2ИнвВзн",
+  "modelName": "i-i-s-i-n-v2-инв-взн",
+  "className": "ИнвВзн",
+  "nameSpace": "IIS.INV2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "подпись",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "договрИнв",
+      "relatedTo": "i-i-s-i-n-v2-договр-инв",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "упрОБъек",
+      "relatedTo": "i-i-s-i-n-v2-упр-о-бъек",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ИнвВзнE",
+      "modelName": "i-i-s-i-n-v2-инв-взн",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "подпись",
+          "caption": "Подпись",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "УпрОБъек",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 4,
+          "type": "standard",
+          "caption": "Упр о бъек",
+          "name": "упрОБъек",
+          "relatedTo": "i-i-s-i-n-v2-упр-о-бъек",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Требования",
+          "lookupValueField": "требования",
+          "relationName": "ДоговрИнв",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "требования",
+              "caption": "Требования",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Договр инв",
+          "name": "договрИнв",
+          "relatedTo": "i-i-s-i-n-v2-договр-инв",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ИнвВзнL",
+      "modelName": "i-i-s-i-n-v2-инв-взн",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "подпись",
+          "caption": "Подпись",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДоговрИнв",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "требования",
+              "caption": "Требования",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Требования",
+          "name": "договрИнв",
+          "relatedTo": "i-i-s-i-n-v2-договр-инв",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

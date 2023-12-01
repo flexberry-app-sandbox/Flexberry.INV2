@@ -1,0 +1,148 @@
+﻿{
+  "name": "IISINV2Тч_Портф",
+  "modelName": "i-i-s-i-n-v2-тч-портф",
+  "className": "Тч_Портф",
+  "nameSpace": "IIS.INV2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "колич",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номинал",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "типАкц",
+      "relatedTo": "i-i-s-i-n-v2-тип-акц",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "Тч_ПортфE",
+      "modelName": "i-i-s-i-n-v2-тч-портф",
+      "attrs": [
+        {
+          "name": "номинал",
+          "caption": "Номинал",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колич",
+          "caption": "Колич",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ТипАкции",
+          "lookupValueField": "типАкции",
+          "relationName": "ТипАкц",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "типАкции",
+              "caption": "Тип акции",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Тип акц",
+          "name": "типАкц",
+          "relatedTo": "i-i-s-i-n-v2-тип-акц",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "Тч_ПортфL",
+      "modelName": "i-i-s-i-n-v2-тч-портф",
+      "attrs": [
+        {
+          "name": "номинал",
+          "caption": "Номинал",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колич",
+          "caption": "Колич",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТипАкц",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "типАкции",
+              "caption": "Тип акции",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Тип акции",
+          "name": "типАкц",
+          "relatedTo": "i-i-s-i-n-v2-тип-акц",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

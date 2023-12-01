@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "УпрОБъек",
+      "projection": "УпрОБъекL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиен",
+      "projection": "КлиенL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Договр инв",
+  "name": "IISINV2ДоговрИнвE",
+  "className": "ДоговрИнвE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-договр-инв",
+      "modelProjection": "ДоговрИнвE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-i-n-v2-тч-реес-e",
+  "editForm": "i-i-s-i-n-v2-тч-реес-e",
+  "external": false,
+  "caption": "Тч_реес",
+  "name": "IISINV2Тч_реесL",
+  "className": "Тч_реесL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-тч-реес",
+      "modelProjection": "Тч_реесL"
+    }
+  ]
+}

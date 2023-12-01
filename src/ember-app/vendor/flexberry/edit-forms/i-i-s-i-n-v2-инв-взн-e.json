@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "УпрОБъек",
+      "projection": "УпрОБъекL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ДоговрИнв",
+      "projection": "ДоговрИнвL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Инв взн",
+  "name": "IISINV2ИнвВзнE",
+  "className": "ИнвВзнE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-i-n-v2-инв-взн",
+      "modelProjection": "ИнвВзнE"
+    }
+  ]
+}
