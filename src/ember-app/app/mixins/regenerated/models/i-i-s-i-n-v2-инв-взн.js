@@ -77,7 +77,10 @@ export let defineProjections = function (modelClass) {
     подпись: attr('Подпись', { index: 2 }),
     номер: attr('Номер', { index: 3 }),
     договрИнв: belongsTo('i-i-s-i-n-v2-договр-инв', 'Требования', {
-      требования: attr('Требования', { index: 4 })
+      требования: attr('Требования', { index: 4 }),
+      организация: belongsTo('i-i-s-i-n-v2-организация', '', {
+        наим: attr('', { index: 5 })
+      }, { index: -1, hidden: true })
     }, { index: -1, hidden: true })
   });
 };

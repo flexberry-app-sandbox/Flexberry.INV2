@@ -163,7 +163,29 @@
           "lookupValue": null,
           "lookupValueField": null,
           "relationName": "ДоговрИнв",
-          "belongsTo": [],
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ДоговрИнв.Организация",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наим",
+                  "caption": "",
+                  "hidden": false,
+                  "index": 5
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "организация",
+              "relatedTo": "i-i-s-i-n-v2-организация",
+              "inverse": null
+            }
+          ],
           "hidden": false,
           "attrs": [
             {
