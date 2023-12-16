@@ -22,49 +22,49 @@ export default Controller.extend({
             link: 'i-i-s-i-n-v2-портф-ц-б-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-портф-ц-б-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-портф-ц-б-l.title'),
-            icon: 'tasks',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-организация-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-организация-l.title'),
-            icon: 'phone',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-тч-портф-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-тч-портф-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-тч-портф-l.title'),
-            icon: 'list',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-сотрудн-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-сотрудн-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-сотрудн-l.title'),
-            icon: 'phone',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-реестр-ак-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-реестр-ак-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-реестр-ак-l.title'),
-            icon: 'edit',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-т-ч-выпл-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-т-ч-выпл-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-т-ч-выпл-l.title'),
-            icon: 'phone',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-клиен-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-клиен-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-клиен-l.title'),
-            icon: 'chart line',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-тч-реес-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-тч-реес-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-тч-реес-l.title'),
-            icon: 'chart line',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-выплат-доход-l',
@@ -75,30 +75,31 @@ export default Controller.extend({
             link: 'i-i-s-i-n-v2-должност-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-должност-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-должност-l.title'),
-            icon: 'folder open',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-упр-о-бъек-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-упр-о-бъек-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-упр-о-бъек-l.title'),
-            icon: 'phone',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-инв-взн-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-инв-взн-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-инв-взн-l.title'),
-            icon: 'book',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-тип-акц-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-тип-акц-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-тип-акц-l.title'),
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-i-n-v2-договр-инв-l',
             caption: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-договр-инв-l.caption'),
             title: i18n.t('forms.application.sitemap.i-n-v2.i-i-s-i-n-v2-договр-инв-l.title'),
-            icon: 'address card',
+            icon: 'archive',
             children: null
           }]
         }
